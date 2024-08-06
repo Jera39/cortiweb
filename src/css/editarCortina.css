@@ -1,0 +1,83 @@
+.curtain-control {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.NombreEditarCortina{
+  margin: 10px 200px;
+
+}
+
+.editarCortinaCard{
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 20px 50px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.editarCortinaIzquierda,
+.editarCortinaMedio,
+.editarCortinaDerecha {
+  flex: 1;
+  /* Cada columna ocupa un espacio flexible igual */
+  padding: 20px;
+  /* Espacio interno opcional para separar el contenido */
+  box-sizing: border-box;
+  /* Incluye el padding en el ancho total de la columna */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.preset-buttons,
+.my-scenes {
+  margin-bottom: 20px;
+}
+
+.buttonEditarCortina {
+  margin: 5px;
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.buttonEditarCortina:hover {
+  background-color: #45a049;
+}
+
+.curtain-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.curtain {
+  width: 100px;
+  background-color: lightgreen;
+  transition: height 0.5s;
+}
+
+.slider-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  margin-top: 10px;
+}

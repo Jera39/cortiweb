@@ -1,0 +1,153 @@
+/* header.css */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 160px;
+    height: 105px;
+    text-shadow: #00000053 0px 5px 4px;
+}
+
+h1 {
+    display: contents;
+    font-size: 40px;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Logo{
+    font-size: 36px;
+}
+
+.Section{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.Sections {
+    display: flex;
+    flex-direction: row;
+    font-size: 21px;
+}
+
+.Section-Header {
+    padding: 16px;
+    gap: 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.Login {
+    width: 200px;
+    height: 57px;
+    border-radius: 100px;
+    background-color: #6cc2f5;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: #00000053 0px 5px 4px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.buttonAcceder {
+    border: none;
+    background: none;
+    color: #ffffff;
+    text-shadow: #00000053 0px 5px 4px;
+    cursor: pointer;
+    font-size: 21px;
+}
+
+.Login:hover{
+    background-color: #2aacf8;
+}
+
+.Login:active{
+    background-color: #0e95e4;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header {
+        padding: 12px 20px;
+        text-align: center;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 0;
+    }
+
+    .Sections {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+    }
+
+    .Sections.show {
+        display: flex;
+    }
+
+    .Section-Header {
+        padding: 12px;
+        font-size: 14px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .Login {
+        width: 150px;
+        height: 45px;
+        margin-left: 0;
+    }
+    .buttonAcceder {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 12px 10px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .Login {
+        width: 100px;
+        height: 40px;
+    }
+    .buttonAcceder {
+        font-size: 15px;
+    }
+
+    .Section-Header {
+        padding: 8px;
+        font-size: 12px;
+    }
+}

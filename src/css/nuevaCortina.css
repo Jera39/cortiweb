@@ -1,0 +1,104 @@
+.Formulario {
+    padding: 40px 128px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto auto 60px auto;
+}
+
+/* Estilo para el formulario en sí */
+.Formulario-NuevaCortina {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+/* Estilo para los labels */
+.Formulario-NuevaCortina label {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Estilo para los inputs */
+.Formulario-NuevaCortina input[type="text"],
+.Formulario-NuevaCortina select,
+.Formulario-NuevaCortina input[type="file"] {
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.Formulario-NuevaCortina input[type="text"]:focus,
+.Formulario-NuevaCortina select:focus,
+.Formulario-NuevaCortina input[type="file"]:focus {
+    border-color: #007BFF;
+    outline: none;
+}
+
+/* Estilo para el botón de agregar */
+.Formulario-NuevaCortina button[type="submit"] {
+    padding: 12px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background-color: #6cc2f5;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.Formulario-NuevaCortina button[type="submit"]:hover {
+    background-color: #6c97f5;
+    transform: translateY(-2px);
+}
+
+.Formulario-NuevaCortina button[type="submit"]:active {
+    background-color: #0990DF;
+    transform: translateY(0);
+}
+
+/* Estilo para el checkbox y su label */
+.Formulario-NuevaCortina div {
+    display: flex;
+    align-items: center;
+}
+
+.Formulario-NuevaCortina input[type="checkbox"] {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+.Formulario-NuevaCortina label[for="sinOpciones"] {
+    font-size: 1em;
+    color: #333;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .Formulario {
+        padding: 15px; /* Reducimos el padding del formulario para dispositivos más pequeños */
+        margin: 10px 10px 60px 10px;
+    }
+
+    .Formulario-NuevaCortina label,
+    .Formulario-NuevaCortina input[type="text"],
+    .Formulario-NuevaCortina select,
+    .Formulario-NuevaCortina input[type="file"],
+    .Formulario-NuevaCortina button[type="submit"],
+    .Formulario-NuevaCortina div,
+    .Formulario-NuevaCortina input[type="checkbox"],
+    .Formulario-NuevaCortina label[for="sinOpciones"] {
+        font-size: 0.8em; /* Reducimos el tamaño de la fuente para dispositivos más pequeños */
+    }
+
+    .Formulario-NuevaCortina button[type="submit"] {
+        padding: 10px 16px; /* Reducimos el padding del botón para dispositivos más pequeños */
+    }
+}

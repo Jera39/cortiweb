@@ -1,0 +1,152 @@
+/* escenas.css */
+.escenas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.default-scenes,
+.custom-scenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.scene {
+    position: relative;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 340px; /* Ajusta según sea necesario */
+    height: 320px; /* Ajusta según sea necesario */
+}
+
+#create-scene-form {
+    margin-top: 20px;
+}
+
+.create-scene-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.create-scene-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.create-scene-form input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.create-scene-form input[type="range"] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.button-crearEscena {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.button-crearEscena:hover {
+    background-color: #0056b3;
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 150px;
+    display: block;
+    margin: 10px 0;
+}
+
+.cortina-container {
+    margin: 30px;
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.agarradera {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.derecha {
+    position: absolute;
+    top: 12px;
+    right: 50px;
+    height: 100%;
+    z-index: 2;
+}
+
+.izquierda {
+    position: absolute;
+    top: 12px;
+    left: 50px;
+    height: 100%;
+    z-index: 2;
+}
+
+.scene-name{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .scene {
+        width: 280px;
+        height: 260px;
+    }
+
+    .cortina-container {
+        margin: 20px;
+        padding: 5px;
+    }
+
+    .agarradera, .derecha, .izquierda, .scene-name {
+        top: 5px;
+    }
+
+    .derecha, .izquierda {
+        height: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .scene {
+        width: 220px;
+        height: 200px;
+    }
+
+    .cortina-container {
+        margin: 10px;
+        padding: 5px;
+    }
+
+    .agarradera, .derecha, .izquierda, .scene-name {
+        top: 5px;
+    }
+
+    .derecha, .izquierda {
+        height: 80%;
+    }
+}
+
+

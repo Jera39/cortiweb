@@ -1,0 +1,89 @@
+.Article {
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.SectionArticle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    /* Ajusta el espacio entre los elementos según sea necesario */
+}
+
+.inline-image {
+    position: relative;
+    top: 28px;
+    left: -8px;
+    width: 107px;
+    height: 91px;
+    margin-right: -60px;
+}
+
+.inline-image:hover {
+    transform: scale(0.9);
+}
+
+/* Media queries para dispositivos móviles */
+@media (max-width: 768px) {
+    .Article {
+        font-size: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .SectionArticle {
+        flex-direction: column;
+        gap: 20px;
+        padding: 0 20px;
+        /* Añade padding lateral para dar espacio en móviles */
+    }
+
+    .inline-image {
+        top: 0;
+        left: 0;
+        width: 80px;
+        height: 68px;
+        margin-right: 0;
+    }
+
+    .inline-image:hover {
+        transform: scale(1);
+        /* Mantén el tamaño de la imagen en hover para móviles */
+    }
+}
+
+@media (max-width: 480px) {
+    .Article {
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .SectionArticle {
+        gap: 0px;
+        padding: 0px 10px;
+        /* Reduce el padding lateral en pantallas más pequeñas */
+    }
+
+    .inline-image {
+        position: absolute;
+        top: 19%;
+        left: 58%;
+        width: 60px;
+        height: 51px;
+        margin-right: 0px;
+        z-index: -1;
+    }
+}
+
+/* 
+    top: 28px;
+    left: -8px;
+    width: 107px;
+    height: 91px;
+    margin-right: -60px; */
